@@ -29,37 +29,33 @@ void loop(){
          elbow.write(i);
          wrist.write(i);
          palm.write(i);
-      }
-      lcd.clear();             
+      }            
       lcd.setCursor (0, 1);
-      lcd.print("Shoulder Movements");
+      lcd.print("Shoulder");
     }
     else if(incomingByte == 2){
       for(int i=20;i<80;i+=1){
          elbow.write(i);
          wrist.write(i);
          palm.write(i);
-      }
-      lcd.clear();             
+      }             
       lcd.setCursor (0, 1);
-      lcd.print("Elbow Movements");
+      lcd.print("Elbow");
     }
     else if(incomingByte == 3){
       for(int i=20;i<80;i+=1){
          wrist.write(i);
          palm.write(i);
-      }
-      lcd.clear();             
+      }            
       lcd.setCursor (0, 1);
-      lcd.print("Wrist Movements");
+      lcd.print("Wrist");
     }
     else if(incomingByte == 4){
       for(int i=20;i<80;i+=1){
          palm.write(i);
-      }
-      lcd.clear();             
+      }            
       lcd.setCursor (0, 1);
-      lcd.print("Palm Movements");
+      lcd.print("Palm");
     }
     else{
       lcd.clear();   
